@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 import sys
 
 # nth term, e.g. 'n + 1'
@@ -10,7 +12,7 @@ def nth_term(n):
     #eval is sloooow
     return eval(nth)
 
-print "The first ", n, " terms of seqence '", nth, "' are:"
+print "The first ", n, " terms of sequence '", nth, "' are:"
 
 for i in range(n):
     print i + 1, " -> ", nth_term(i + 1)
