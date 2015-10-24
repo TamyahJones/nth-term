@@ -10,9 +10,13 @@ nth_term = eval('lambda n: ' + nth_term_exp, { '__builtins__': None })
 
 # number of terms to print, e.g 10
 N = int(sys.argv[2])
+print "# The *n*th term\n"
 
-print "The first", N, "terms of the sequence '" + nth_term_exp + "' are:"
+print "The first *" + str(N) + "* terms of the sequence `" + nth_term_exp + "` are:\n"
+
+print "| *n* | *n*th term |"
+print "|-----|------------|"
 
 for i in range(N):
     n = i + 1
-    print n, " -> ", nth_term(n)
+    print '| ',n , " | ", nth_term(n), " |"
